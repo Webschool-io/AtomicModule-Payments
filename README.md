@@ -122,3 +122,36 @@ Agora sim podemos definir nossa Interface:
 
 
 ### gerenciar pagamentos
+
+
+## Tipos
+
+> Mas hein? Tipos no JavaScript?
+
+**EXATAMENTE!** Mas não no sentido literal da palavra como sendo 1 tipo nativo, mas sim 1 tipo que criaremos para seguir 1 padrão.
+
+### PaymentResponseType
+
+- type: Object
+- schema: {
+  status: String
+  message: String
+  code: Number // int
+}
+
+### PaymentRequestType
+
+**Esse é um Tipo Composto!**
+
+- type: Object
+- schema: {
+  BasicDataType,
+  SenderDataType,
+  ShippingDataType
+}
+
+### BasicDataType
+
+### SenderDataType
+
+### ShippingDataType
