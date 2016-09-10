@@ -134,8 +134,9 @@ Agora sim podemos definir nossa Interface:
 
 - type: Object
 - schema: {
-  status: String
-  message: String
+  idTransaction: Number, //int 
+  status: String,
+  message: String,
   code: Number // int
 }
 
