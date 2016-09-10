@@ -27,5 +27,20 @@ Aqui definimos a nomenclatura utilizada para cada funcionalidade, seus parâmetr
   - false: quando o meio de pagamento não existe
 
 ### fazer pagamento
+
+- nome:
+- parâmetros:
+- retorno:
+
 ### cancelar pagamento
+
+- nome:
+- parâmetros:
+- retorno:
+
+
 ### gerenciar pagamentos
+
+- nome:
+- parâmetros:
+- retorno:
