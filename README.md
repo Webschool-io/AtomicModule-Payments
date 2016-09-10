@@ -64,7 +64,7 @@ curl https://ws.pagseguro.uol.com.br/v2/checkout/ -d\
 	&shippingAddressCity=Sao Paulo\
 	&shippingAddressState=SP\
 	&shippingAddressCountry=BRA"
-	```
+```
 
 Nisso percebemos que para fazer 1 pagamento devemos enviar todos os dados necessários, que são:
 
