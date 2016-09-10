@@ -20,6 +20,10 @@ Aqui definimos a nomenclatura utilizada para cada funcionalidade, seus parâmetr
 
 ### Escolher meio de pagamento
 
+Nessa funcionalidade você irá definir qual o meio de pagamento escolhido, o qual será selecionado caso o mesmo exista no nosso cadastro, enviando também qual seu país de origem.
+
+*ps: Não será necessário definir a moeda pois a mesma já é atrelada ao país.*
+
 - nome: setPayment
 - parâmetros: Object 
   - {name: 'PayPal', country: 'Brasil'}
@@ -101,6 +105,7 @@ Dados de envio do produto:
 Com isso podemos criar então 3 **tipos** diferentes de objetos que compõe essa requisição:
 
 - BasicDataType
+- ProductDataType
 - SenderDataType
 - ShippingDataType
 
@@ -153,6 +158,49 @@ Agora sim podemos definir nossa Interface:
 
 ### BasicDataType
 
+
+- type: Object
+- schema: {
+  email: String,
+  token: String,
+  currency: String
+}
+
+### ProductDataType
+
+Tipo que define as informações do produto:
+
+- type: Object
+- schema: {
+  itemId: String,
+  itemName: String
+  itemDescription: String,
+  itemAmount: Number,
+  itemQuantity: Number,
+  itemWeight: Number,
+  reference: String
+}
+
 ### SenderDataType
 
+Tipo que define as informações do cliente:
+
+- type: Object
+- schema: {
+  senderName: String,
+  senderAreaCode: String,
+  senderPhone: String,
+  senderEmail: String
+}
+
 ### ShippingDataType
+
+Tipo que define as informações do envio do produto:
+
+- type: Object
+- schema: {
+  senderName: String,
+  senderAreaCode: String,
+  senderPhone: String,
+  senderEmail: String
+}
